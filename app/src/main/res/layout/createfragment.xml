@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:backgroundTint="@color/brand"
+        android:src="@drawable/ic_create_white_24dp"
+        android:layout_margin="20dp"
+        android:id="@+id/create_trip"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ran2"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"
+        android:layout_centerInParent="true">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_drive_eta_black_24dp"
+        android:layout_margin="10dp"
+        android:id="@+id/car_eta"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAR DETAILS"
+        android:layout_toRightOf="@id/car_eta"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:id="@+id/car_details"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/car_eta"
+        android:layout_below="@id/car_details"
+        android:id="@+id/edit_detail"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_event_seat_black_24dp"
+        android:layout_margin="10dp"
+        android:id="@+id/seat"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL SEATING"
+        android:layout_toRightOf="@id/seat"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:id="@+id/seat_text"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/seat"
+        android:layout_below="@id/seat_text"
+        android:id="@+id/edit_seat"
+        android:inputType="number"/>
+    </RelativeLayout>
+
+</RelativeLayout>
